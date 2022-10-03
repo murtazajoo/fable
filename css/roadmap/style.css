@@ -95,12 +95,19 @@ span {
   background-color: rgb(133, 224, 255) !important;
   letter-spacing: 1px;
   font-weight: 300 !important;
+  transition: 500ms;
 }
-
+span:hover {
+  background-color: rgb(122, 194, 218) !important;
+}
 .key {
-  padding: 20px;
+  padding: 30px !important;
   margin: 30px;
   border: 1px dotted var(--main);
   width: 450px;
   font-family: var(--verla) !important;
+}
+
+.key li:hover {
+  color: var(--purple);
 }

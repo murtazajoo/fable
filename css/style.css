@@ -4,3 +4,54 @@
   --secondary: #53d0de6d;
   --purple: rgb(159, 5, 136);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.nav-back {
+  position: relative;
+  background-color: rgb(88, 204, 230);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--baloo);
+  color: var(--main);
+}
+#back {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  cursor: pointer;
+}
+
+.links {
+  padding: 150px 0;
+}
+.links h3 {
+  font-size: 2rem;
+  font-family: var(--baloo);
+}
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  padding: 5px 0;
+}
+.links ul li a {
+  font-size: 18px;
+  font-family: var(--verla);
+  text-decoration: none;
+  color: var(--purple);
+  transition: 500ms;
+}
+.links ul li a:hover {
+  color: rgb(136, 136, 136);
+}
