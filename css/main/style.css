@@ -50,7 +50,7 @@ header {
   display: flex;
   background-color: var(--secondary);
 
-  background-image: url(/img/wave.svg);
+  background-image: url(/../img/wave.svg);
   background-position: center;
   background-size: cover;
 }

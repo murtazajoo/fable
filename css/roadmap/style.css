@@ -1,0 +1,88 @@
+body {
+  padding-bottom: 200px;
+  background-color: var(--secondary) !important;
+}
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: rgb(4, 141, 139);
+}
+.timeline-branch .timeline:before {
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: var(--main);
+}
+
+.timeline > li {
+  position: relative;
+}
+
+.timeline > li:not(:first-child) {
+  margin-top: 80px;
+}
+
+.timeline-branch {
+  z-index: -1;
+  content: "";
+  height: 50px;
+  left: 30px;
+  margin-top: -10px;
+  position: absolute;
+  border-right: 3px solid var(--main);
+  border-top: 3px solid var(--main);
+  -webkit-border-radius: 0 20px;
+  -moz-border-radius: 0 20px;
+  border-radius: 0 20px;
+}
+
+.timeline-branch-content {
+  position: absolute;
+  top: 45px;
+}
+
+section {
+  margin: 0 auto;
+  width: 80% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 20vh;
+  text-align: center;
+}
+h1 {
+  font-family: var(--baloo) !important;
+  letter-spacing: 2px;
+  color: var(--main);
+  font-size: 60px !important;
+}
+span {
+  padding: 20px !important;
+  font-size: 18px !important;
+  font-family: var(--verla) !important;
+  color: var(--main) !important;
+  background-color: rgb(133, 224, 255) !important;
+  letter-spacing: 1px;
+  font-weight: 300 !important;
+}
+
+.key {
+  padding: 20px;
+  margin: 30px;
+  border: 1px dotted var(--main);
+  width: 450px;
+  font-family: var(--verla) !important;
+}
