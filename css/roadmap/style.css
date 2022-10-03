@@ -1,6 +1,24 @@
 body {
-  padding-bottom: 200px;
+  padding: 100px 0;
   background-color: var(--secondary) !important;
+}
+body > a > img {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: var(--secondary);
+  z-index: 2;
+  transition: 500ms;
+}
+body > a > img:hover {
+  background-color: var(--main);
+}
+
+.holder {
+  padding-top: 100px;
+  padding-left: 50px;
 }
 .timeline {
   list-style: none;
