@@ -225,10 +225,10 @@ li div {
 
   text-align: center;
   font-family: var(--verla);
-  color: #fff;
+  color: var(--main);
   text-decoration: none;
   padding: 20px 20px;
-  background-color: rgb(2, 121, 121);
+  background-color: rgb(119, 200, 200);
   border-radius: 5px;
   font-weight: bolder;
   transition: 500ms;
