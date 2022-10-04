@@ -27,4 +27,5 @@ function theme() {
     document.documentElement.style.setProperty('--secondary', '#53d0de6d');
   }
 }
+
 theme()
