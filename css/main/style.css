@@ -50,7 +50,7 @@ header {
   display: flex;
   background-color: var(--secondary);
 
-  background-image: url(/../img/wave.svg);
+  background-image: url(../../img/wave.svg);
   background-position: center;
   background-size: cover;
 }
@@ -176,7 +176,7 @@ header div a:hover {
 
   text-align: center;
   font-family: var(--verla);
-  color: var(--main);
+  color: #02343a;
   text-decoration: none;
   padding: 20px 20px;
   background-color: rgb(125, 234, 234);
@@ -248,10 +248,11 @@ header div a:hover {
   color: #fff;
   font-size: 12px;
   transition: 500ms;
-  background-color: var(--main);
+  background-color: var(--purple);
 }
 #about a:hover {
-  background-color: var(--purple);
+  background-color: var(--main);
+  color: var(--primary);
 }
 
 @media (max-width: 800px) {
