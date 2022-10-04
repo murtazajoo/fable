@@ -14,92 +14,154 @@
         <!--       all.css      -->
         <link rel="stylesheet" href="css/style.css">
         <!--       all.css end  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+body.dark {
+  background-color: #292c35;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
 
+.labeled {
+  width: 40px;
+  height: 20px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  /* transform: scale(1.5); */
+}
+li div{
+    position: relative;
+}
 
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .labeled .ball{
+  transform: translateX(20px);
+}
+
+.fa-moon-o {
+  color: pink;
+}
+
+.fa-sun-o {
+  color: yellow;
+}
+        </style>
     </head>
-    <body onload="theme()">
+    <body>
         <header>
             <nav>
                 <img src="img/logo/blub-with-no-bg.png" id="logo" alt="logo">
                 <ul><li><a href=""> sign in</a></li>
                     <li><a href="about/"> about</a></li>
                     <li><a href=""> contact</a></li>
-                    <li><a href=""> FAQ</a></li></ul>
-            </nav>
-            <div>
-                <h1>fabl<span>e</span></h1>
-                <small>fulfil your potential</small>
-                <p><b>"education is the key, if its success you wish to see"</b><br>
-                    The only biggest reason for doing so fast is that in the
-                    world of intern today people have started spending a lot of
-                    time on internet. This has made them aware of online
-                    courses.
-                </p>
-                <br>
-                <a href="#choose">LEARN</a>
-            </div>
-            <div id="img-holder"><img src="img/illus/header.png" alt="man on
-                    books"></div>
-        </header>
-        <main>
-            <section class="sec" id="choose">
-                <!-- <h1>Choose Your Class</h1> -->
+                    <li><div>
+                            <input type="checkbox" class="checkbox"
+                                id="checkbox">
+                            <label for="checkbox" class="labeled">
+                                <i class="fa fa-moon-o"></i>
+                                <i class='fa fa-sun-o'></i>
+                                <div class='ball'>
+                                </label>
+                            </div></li></ul>
+                </nav>
                 <div>
-                    <div class="box" id="roadmap">
-                        <h1>Roadmap</h1>
-                        <p>educational content to help guide the students in
-                            picking up the path and guide their learnings.</p>
-                        <div class="grid">
-                            <a href="roadmap/doctor/">MBBS</a>
-                            <a href="roadmap/engineer/">Engineer</a>
-                            <a href="roadmap/frontend-dev/">Frontend-Dev</a>
-                            <a href="">Entrepreneur</a>
-                            <a href="">Architect</a>
-                            <a href="">Data Scientist</a>
-                        </div>
-                    </div>
-                    <div class="box" id="exams">
-                        <h1>Exams</h1>
-                        <p>get previous year papers plus notes and more</p>
-                        <div class="grid">
-                            <a href="">JEE-MAIN</a>
-                            <a href="">JEE-ADV</a>
-                            <a href="">NEET</a>
-                            <a href="">AIIMS</a>
-                            <a href="">12th</a>
-                            <a href="" style="background-color:
-                                transparent;box-shadow:none;text-decoration:underline;">more..</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="about" style="height: 100vh;">
-                <img src="img/illus/about.svg"
-                    alt="illustration">
-                <div>
-                    <h2>About Us</h2>
-                    <p>
-                        fable is an online education platform that provides
-                        everything a student needs to succeed in their studies.
-                        We offer a wide range of resources, including a roadmap
-                        to selecting the right course, notes and previous exam
-                        papers, as well as important questions to study.
-                        <br>
-                        <br>
-                        <span>
-                            We believe that every student deserves access to
-                            quality
-                            education, so we offer our services for free.
-
-                            So if you're looking for a one-stop shop for all
-                            your
-                            educational needs, look no further than fable!
-                        </span>
+                    <h1>fabl<span>e</span></h1>
+                    <small>fulfil your potential</small>
+                    <p><b>"education is the key, if its success you wish to see"</b><br>
+                        The only biggest reason for doing so fast is that in the
+                        world of intern today people have started spending a lot
+                        of
+                        time on internet. This has made them aware of online
+                        courses.
                     </p>
-                    <a href="about/">Read More</a>
+                    <br>
+                    <a href="#choose">LEARN</a>
                 </div>
-            </section>
-        </main>
-        <script src="js/theme/source.js"></script>
-    </body>
-</html>
+                <div id="img-holder"><img src="img/illus/header.png" alt="man on
+                        books"></div>
+            </header>
+            <main>
+                <section class="sec" id="choose">
+                    <!-- <h1>Choose Your Class</h1> -->
+                    <div>
+                        <div class="box" id="roadmap">
+                            <h1>Roadmap</h1>
+                            <p>educational content to help guide the students in
+                                picking up the path and guide their learnings.</p>
+                            <div class="grid">
+                                <a href="roadmap/doctor/">MBBS</a>
+                                <a href="roadmap/engineer/">Engineer</a>
+                                <a href="roadmap/frontend-dev/">Frontend-Dev</a>
+                                <a href="">Entrepreneur</a>
+                                <a href="">Architect</a>
+                                <a href="">Data Scientist</a>
+                            </div>
+                        </div>
+                        <div class="box" id="exams">
+                            <h1>Exams</h1>
+                            <p>get previous year papers plus notes and more</p>
+                            <div class="grid">
+                                <a href="">JEE-MAIN</a>
+                                <a href="">JEE-ADV</a>
+                                <a href="">NEET</a>
+                                <a href="">AIIMS</a>
+                                <a href="">12th</a>
+                                <a href="" style="background-color:
+                                    transparent;box-shadow:none;text-decoration:underline;">more..</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="about" style="height: 100vh;">
+                    <img src="img/illus/about.svg"
+                        alt="illustration">
+                    <div>
+                        <h2>About Us</h2>
+                        <p>
+                            fable is an online education platform that provides
+                            everything a student needs to succeed in their
+                            studies.
+                            We offer a wide range of resources, including a
+                            roadmap
+                            to selecting the right course, notes and previous
+                            exam
+                            papers, as well as important questions to study.
+                            <br>
+                            <br>
+                            <span>
+                                We believe that every student deserves access to
+                                quality
+                                education, so we offer our services for free.
+
+                                So if you're looking for a one-stop shop for all
+                                your
+                                educational needs, look no further than fable!
+                            </span>
+                        </p>
+                        <a href="about/">Read More</a>
+                    </div>
+                </section>
+            </main>
+            <script src="js/theme/source.js"></script>
+        </body>
+    </html>
