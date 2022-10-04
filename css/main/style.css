@@ -125,7 +125,7 @@ header div a:hover {
 
 .sec {
   background-color: var(--secondary);
-  background-image: url(/img/wave2.svg);
+  background-image: url(../../img/wave2.svg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -176,7 +176,7 @@ header div a:hover {
 
   text-align: center;
   font-family: var(--verla);
-  color: #02343a;
+  color: var(--main);
   text-decoration: none;
   padding: 20px 20px;
   background-color: rgb(125, 234, 234);

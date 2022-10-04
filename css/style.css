@@ -15,7 +15,7 @@
   position: relative;
   background-color: rgb(88, 204, 230);
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@
   font-size: 18px;
   font-family: var(--verla);
   text-decoration: none;
-  color: var(--purple);
+  color: rgb(137, 126, 0);
   transition: 500ms;
 }
 .links ul li a:hover {
