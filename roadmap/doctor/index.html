@@ -22,13 +22,15 @@
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <!-- bootstrap-end -->
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
         <a href="../../../">
             <img src="../../img/icons/back.png" alt="back">
         </a>
 
-        <section>
+        <section class="heading">
             <h1>Roadmap For Becoming A Doctor</h1>
         </section>
 
@@ -180,5 +182,18 @@
                 <li><b>DM</b>: Doctor of Medicine </li>
             </ul>
         </div>
+        <div id="other-links" style="padding:50px ;"></div>
+        <script>
+
+$(function(){
+  $("#other-links").load("../../links.html");
+});
+</script>
+        <script>
+    const queryString = window.location.search;
+const parameters = new URLSearchParams(queryString);
+const value = parameters.get('key');
+console.log(value)
+</script>
     </body>
 </html>

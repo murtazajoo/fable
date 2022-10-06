@@ -72,7 +72,7 @@ body > a > img:hover {
   top: 45px;
 }
 
-section {
+.heading {
   margin: 0 auto;
   width: 80% !important;
   display: flex !important;
@@ -81,7 +81,7 @@ section {
   height: 20vh;
   text-align: center;
 }
-h1 {
+.heading h1 {
   font-family: var(--baloo) !important;
   letter-spacing: 2px;
   color: var(--main);
